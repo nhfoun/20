@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Michroma", sans-serif;
+  height: 100vh;
+}
+.loading-page{
+    display: flex;
+}
+.loading-page #svg{
+    display: inline-block;
+}
+/* .containerx {
+  background-color: black;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+} */
+
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #191654;
+}
+
+#svg {
+  height: 150px;
+  width: 150px;
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+
+.logo-name {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+</style>
+</head>
+
+<body>
+    <div class="containerx">
+        <header>
+            <nav class="top-nav">
+              <i class="bx bx-phone" id="call"><a href="">01717734248</a></i>
+              <img src="WhatsApp Image 2024-05-27 at 14,03,50_8f8011e6_processed.jpg" alt=""/>
+      
+              <i class="bx bx-envelope" id="email"><a href="">nhfoundation43@gmail.com</a></i>
+      
+              <!-- call number -->
+              <!-- E-mail adress -->
+            </nav>
+      
+            <nav class="nav-bars" id="navLinks">
+            
+              <ul class="nav-links" id="nav-links">
+                <li id="img-nav">
+                  <img
+                    src="WhatsApp Image 2024-05-26 at 23.58.54_e9676385.jpg"
+                    alt=""
+                  /><a href="">NH Founation</a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                 <li><a href="programm.html">Programme</a></li>
+                 <li><a href="blog-nf.html">Blog</a></li>
+                <li><a href="membership.html">Member-Ships</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="contact%20us.html">Contact Us</a></li>
+              </ul>
+              <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+            </nav>
+          </header>
+      
+          <!--slide  -->
+      
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="larm-rmah-AEaTUnvneik-unsplash.jpg" style="width: 100%" />
+              <div class="text2">
+                <h1 class="text2h1">Help for the <span>Gaza's</span>people</h1>
+                <p class="text2p">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                  consequuntur beatae animi maiores et sint voluptates. Voluptates
+                  deserunt repellat aperiam?
+                </p>
+                <button class="hero-btn"><a href="Donate.html">Doante here</a></button>
+              </div>
+            </div>
+      
+            <div class="mySlides fade">
+              <img src="pexels-hiteshchoudhary-1739855.jpg" style="width: 100%" />
+              <div class="text2">
+                <h1 class="text2h1">Help for the <span>Gaza's</span>people</h1>
+                <p class="text2p">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                  possimus odio nam minus reiciendis temporibus sint blanditiis
+                  dolores ut incidunt?
+                </p>
+                <button class="hero-btn"><a href="Donate.html">Doante here</a></button>
+              </div>
+            </div>
+      
+            <div class="mySlides fade">
+              <img src="about.jpg" style="width: 100%" />
+              <div class="text2">
+                <h1 class="text2h1">Help for the <span>Gaza's</span>people</h1>
+                <p class="text2p">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quae
+                  neque optio inventore cupiditate, error dignissimos harum minima
+                  tempore quasi.
+                </p>
+                <button class="hero-btn"><a href="Donate.html">Doante here</a></button>
+              </div>
+            </div>
+      
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+    <!-- s.e -->
+    
+    
+    <!-- About section start -->
+    <main id="abou">
+        <div class="about">
+            <div class="con">
+                <h2 class="h">
+                    About Us
+    
+                </h2>
+                <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere et natus aperiam
+                    repudiandae non magnam!</p>
+            </div>
+            <div class="container-con">
+                <img src="Untitled design (8).png">
+    
+                <div class="text">
+                    <h3 class="d" id="f">Our Foundation</h3>
+                    <p class="d">Bangladesh Rice Research Institute High Schoo is a NON-GOVERNMENT School . This
+                        institute's EIIN
+                        number is 108959. This institute is located in GAZIPUR, DHAKA division. It's geographical area
+                        is PLAIN LAND. It offers classes upto Secondary level.It was established on 1993. Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Labore quam est, ad similique blanditiis ut illum
+                        porro laudantium. Assumenda, praesentium dignissimos quam quibusdam harum quod dolor eaque Lorem, ipsum 
+                        Nostrum, voluptas iure? Porro ducimus ipsam quis, laborum possimus cumque necessitatibus numquam
+                        explicabo doloribus aut quod eveniet cum vel excepturi. Tenetur quae totam laboriosam ullam esse 
+           
+                        </p>
+                        <button class="hero-btn"><a href="about.html">Know More</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End of about section -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- post/programme start -->
+    <sectiin class="facilities">
+    
+        <h1 class="heding">
+           Features
+        </h1>
+        <div class="box-container">
+            <div class="box1">
+                <img src="volenterr-removebg-preview.png">
+                <h3>Be a volenteer</h3>
+                <p>to be a volenteer <a href="membership.html">see more</a></p>
+            </div>
+            <div class="box2">
+                <img src="logo_of_charit-removebg-preview.png">
+                <h3>Programme</h3>
+                <p>latest Programme here <a href="programm.html">see more</a></p>
+            </div>
+            <div class="box3">
+                <img src="membership_7548075.png">
+                <h3>Members</h3>
+                <p>Se the members list..<a href="membership.html">see more</a></p>
+            </div>
+    
+    
+    
+        </div>
+    </sectiin>
+    
+    <!-- programm end -->
+    
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- programm and others story start -->
+    
+    
+    
+    
+    <div class="Programms">
+    <div class="programme-banner">
+        <h1 class="programm-tiitle">See our programmes and the status of humanities</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio dolores molestiae quibusdam rerum qui cum harum alias, impedit tempore. Maiores!</p>
+        <a href="programm.html" class="hero-btn4">See more</a>
+    </div>
+    
+    </div>
+    
+    
+    
+    <!-- part2 -->
+    
+    
+    
+    
+    <!-- prog. and other story end -->
+    
+    
+    
+    
+    <!--prog. and other story start part2  -->
+    
+    
+    <div class="stories">
+        <h1>Status of Huminity</h1>
+        <div class="stories-all">
+            <div class="story">
+                <img src="hepl them.jpeg" alt="" class="slide-image">
+                <div class="story-info">
+                    <h4><a href="programm.html">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</a></h4>
+                    <i class="fas fa-user">Md.Safwan</i>
+                    &nbsp;
+                    <i class="fa-regular fa-calendar-days">09,feb,2024</i>
+    
+    
+                </div>
+    
+            </div>
+            <div class="story">
+                <img src="help them2.jpeg" alt="" class="slide-image">
+                <div class="post-info">
+                    <h4><a href="programm.html">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</a></h4>
+                    <i class="fas fa-user">Md.Safwan</i>
+                    &nbsp;
+                    <i class="fa-regular fa-calendar-days">09,feb,2024</i>
+    
+    
+                </div>
+    
+            </div>
+            <div class="story">
+                <img src="231106231737-01-gaza-children-110623.jpg" alt="" class="slide-image">
+                <div class="post-info">
+                    <h4><a href="programm.html">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</a></h4>
+                    <i class="fas fa-user">Md.Safwan</i>
+                    &nbsp;
+                    <i class="fa-regular fa-calendar-days">09,feb,2024</i>
+    
+    
+                </div>
+    
+            </div>
+            <div class="story">
+                <img src="flood affected people.bmp" alt="" class="slide-image">
+                <div class="post-info">
+                    <h4><a href="programm.html">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</a></h4>
+                    <i class="fas fa-user">Md.Safwan</i>
+                    &nbsp;
+                    <i class="fa-regular fa-calendar-days">09,feb,2024</i>
+    
+    
+                </div>
+    
+            </div>
+    
+    
+    
+    
+    
+            <div class="story"id="hidden">
+    
+                <img src="flood affected people.bmp" alt="" class="slide-image">
+                <div class="post-info">
+                    <h4><a href="programm.html">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</a></h4>
+                    <i class="fas fa-user">Md.Safwan</i>
+                    &nbsp;
+                    <i class="fa-regular fa-calendar-days">09,feb,2024</i>
+    
+    
+                </div>
+    
+            </div>
+            <div class="story"id="hidden">
+    
+                <img src="flood affected people.bmp" alt="" class="slide-image">
+                <div class="post-info">
+                    <h4><a href="programm.html">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</a></h4>
+                    <i class="fas fa-user">Md.Safwan</i>
+                    &nbsp;
+                    <i class="fa-regular fa-calendar-days">09,feb,2024</i>
+    
+    
+                </div>
+    
+            </div>
+            <div class="story"id="hidden">
+    
+                <img src="flood affected people.bmp" alt="" class="slide-image">
+                <div class="post-info">
+                    <h4><a href="blog-nf.html">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</a></h4>
+                    <i class="fas fa-user">Md.Safwan</i>
+                    &nbsp;
+                    <i class="fa-regular fa-calendar-days">09,feb,2024</i>
+    
+    
+                </div>
+    
+            </div>
+            <div class="story" id="hidden">
+    
+                <img src="flood affected people.bmp" alt="" class="slide-image">
+                <div class="post-info">
+                    <h4><a href="blog-nf.html">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</a></h4>
+                    <i class="fas fa-user">Md.Safwan</i>
+                    &nbsp;
+                    <i class="fa-regular fa-calendar-days">09,feb,2024</i>
+    
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- prog. and other story end part2-->
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--members card start  -->
+    <h1 class="card-tittle">Meet with our members</h1>
+    <div class="card-container">
+        <div class="member-card">
+            <div class="card-front">
+                <img src="noman v. pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h2 class="name">John Doe</h2>
+                <p class="title">Web Developer</p>
+            </div>
+            <div class="card-back">
+                <h2>About Me</h2>
+                <p>Hi! I'm John, a passionate web developer skilled in HTML, CSS, and JavaScript.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla expedita doloremque, quod quos sunt praesentium libero omnis qui. Accusamus.</p>
+                <div class="icons1">
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"><i class='bx bxl-facebook' style='color:#fffefe'></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-square-instagram"></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="member-card">
+            <div class="card-front">
+                <img src="cropped_image (4).bmp" alt="Profile Picture" class="profile-pic">
+                <h2 class="name">John Doe</h2>
+                <p class="title">Web Developer</p>
+    
+            </div>
+            <div class="card-back">
+                <h2>About Me</h2>
+                <p>Hi! I'm John, a passionate web developer skilled in HTML, CSS, and JavaScript.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis architecto libero expedita illo. Suscipit facere eveniet ad reiciendis consectetur.</p>
+                <div class="icons1">
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"><i class='bx bxl-facebook' style='color:#fffefe'></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-square-instagram"></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-solid fa-envelope"></i></a>
+                </div>
+                
+            </div>
+            
+               
+    
+    
+    
+            
+        </div>
+    
+        <div class="member-card">
+            <div class="card-front">
+                <img src="noman v. pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h2 class="name">John Doe</h2>
+                <p class="title">Web Developer</p>
+            </div>
+            <div class="card-back">
+                <h2>About Me</h2>
+                <p>Hi! I'm John, a passionate web developer skilled in HTML, CSS, and JavaScript.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit praesentium eaque earum corporis non amet magni ea doloribus ducimus vitae.</p>
+                <div class="icons1">
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"><i class='bx bxl-facebook' style='color:#fffefe'></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-square-instagram"></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-solid fa-envelope"></i></a>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="member-card">
+            <div class="card-front">
+                <img src="cropped_image (4).bmp" alt="Profile Picture" class="profile-pic">
+                <h2 class="name">John Doe</h2>
+                <p class="title">Web Developer</p>
+            </div>
+            <div class="card-back">
+                <h2>About Me</h2>
+                <p>Hi! I'm John, a passionate web developer skilled in HTML, CSS, and JavaScript.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta dolore placeat temporibus voluptas necessitatibus libero optio consequatur molestiae modi.</p>
+                <div class="icons1">
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"><i class='bx bxl-facebook' style='color:#fffefe'></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-square-instagram"></i></a>
+                    <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-solid fa-envelope"></i></a>
+                   
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- m.card end -->
+    <!-- --------------testominial-------------- -->
+    <sectiin class="testomonial">
+        <h1>What Our ____ Says</h1>
+        
+        <div class="rowx">
+            <div class="testimonial-col">
+                <img src="noman v. pic.jpg">
+                 <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, fugiat vitae placeat velit,
+                        officiis sit nihil aut sint modi molestiae excepturi non nulla Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. At impedit repellat nemo porro molestiae dicta, amet architecto
+                        quidem soluta praesentium. Deleniti ex qui iusto ab quaerat placeat cumque sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod natus sapiente hic architecto illo explicabo ab soluta nisi at odit?</p>
+                    <h3>Mohammad Noman Gazi</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+       
+            </div>
+            <div class="testimonial-col">
+                <img src="cropped_image (4).bmp">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, fugiat vitae placeat velit,
+                        officiis sit nihil aut sint modi molestiae excepturi non nulla Lorem ipsum dolor sit amet <marks class="mark">                    consectetur adipisicing elit. Perspiciatis libero distinctio sequi dicta eius nisi, consequuntur
+                            nam corporis repellat repellendus a inventore quae quidem qui illo pariatur accusamus velit
+                            corrupti!</marks>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad esse tenetur quos obcaecati facere temporibus nostrum iste doloremque, impedit eveniet.
+                    </p>
+                    <h3>Mohammad Safwan</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </sectiin>
+    <!-- textemonial end -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <section class="cta">
+        <h1>Enroll for our contact or donate us <br>anywhere from the country </h1>
+        <a href="contact us.html" class="hero-btn3">CONTACT US</a>
+    </section>
+    <!-- Donation form end -->
+    <!-- footer -->
+    
+    <footer>
+        
+        <div class="all-footer">
+            <div class="all-links">
+                <h3>Important links</h3>
+                <p>You will find all cahrity link</p>
+                <ul>
+                    <li><i><a href="https://unicef.org/"target="_blank">https://unicef.org/</a></i></li>
+                    <li><i><a href="https://www.nhcf.org/"target="_blank">https://www.nhcf.org/</a></i></li>
+                    <li><i><a href="https://ghcare.com/"target="_blank">https://ghcare.com/</a></i></li>
+                    <li><i><a href="https://unicef.org/"target="_blank">https://unicef.org/</a></i></li>
+                    
+                </ul>
+                
+            </div>
+            <div class="help">
+                <h3>conatct for help</h3>
+                <p>all contacts</p>
+                <ul>
+                    <li><i><a href="">Call-01710166444</a></i></li>
+                    <li><i><a href="https://unicef.org/" target="_blank">Facebook</a></i></li>
+                    <li><i><a href="https://unicef.org/"target="_blank">Instragram</a></i></li>
+                    <li><i><a href="https://unicef.org/"target="_blank">Eamil-nhfoundation43@gmail.com</a></i></li>
+                    
+                </ul>
+            </div>
+          <div class="donate">
+                <h3>Doante here</h3>
+                <p>Lorem ipsum dolor sit </p>
+                <button class="hero-btn5"><a href="Donate.html">Doante</a></button>
+                
+            </div>
+        </div>
+      
+      
+      <div class="last-part">
+        <h4>Developed by <mains class="Ld">Mohammad Safwan</mains>  from <mains class="Ld">MSMS Tech Ld.</mains></h4>
+        
+        <div class="icons">
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-square-facebook"></i></a>
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-web"></i></a>
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-brands fa-square-instagram"></i></a>
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=100069315034225"> <i class="fa-solid fa-envelope"></i></a>
+        </div>
+                   
+      </div>
+         
+      </footer>
+      <a href="" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    
+
+    </div>
+
+    <div class="loading-page">
+    <div>
+
+    
+   
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+           
+      
+            <path
+                d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z" />
+        </svg>
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M50.8 479.8h83.4V367.8l-83.4 47zm329 0h82.4V414.9l-82.4-47zm0-448V251.6L256.2 179.2 134.5 251.6V31.8H50.8V392.6L256.2 270.3 462.2 392.6V31.8z"/></svg>
+        
+       
+    </div>
+        <div class="name-container">
+            <div class="logo-name">NH Foundation</div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script >
+    gsap.fromTo(
+  ".loading-page",
+  { opacity: 1 },
+  {
+    opacity: 0,
+    display: "none",
+    duration: 1.5,
+    delay: 3.5,
+  }
+);
+
+gsap.fromTo(
+  ".logo-name",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    delay: 0.5,
+  }
+);
+</script>
+<script>
+    var navLinks = document.getElementById("navLinks")
+          function showMenu() {
+              navLinks.style.right = "0";
+          }
+          function hideMenu() {
+              navLinks.style.right = "-200px";
+          }
+   </script>
+  
+  
+  
+  
+  
+  
+  </script>
+  <script>
+  
+  
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav-links');
+  
+  burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+  });
+  </script>
+  <script >
+      let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+  let slides = document.getElementsByClassName("mySlides");
+  for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+  
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+  }
+  
+  </script>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Loading Animation</title>
+    <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f4f8;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .loading-container {
+        text-align: center;
+    }
+    
+    .loading-text {
+        margin-top: 15px;
+        font-size: 18px;
+        color: #333;
+    }
+    
+    svg {
+        width: 150px;
+        height: 150px;
+    }
+    
+    
+
+    </style>
+</head>
+<body>
+
+    <!-- SVG Container -->
+    <div class="loading-container">
+        <!-- Hand and Heart SVG -->
+        <svg id="hand-heart-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <!-- Hand (simplified for the example) -->
+            <path d="M10 70 Q30 90 50 70 Q70 50 90 70 Q70 80 50 80 Q30 80 10 70 Z" fill="#f4a261" />
+            <!-- Heart -->
+         
+        </svg>
+        <div class="loading-text">Loading... Please wait</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <script >
+        // Wait until DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Pulse animation for the heart
+    gsap.fromTo("#heart", {
+        scale: 1,
+        y: 0
+    }, {
+        scale: 1.2,       // Scale up to give a "pulse" effect
+        y: -5,            // Move the heart slightly upward
+        repeat: -1,       // Infinite loop
+        yoyo: true,       // Animate back and forth (pulsing)
+        ease: "power1.inOut",
+        duration: 1.5,    // Time for each pulse
+    });
+});
+
+    </script>
+</body>
+</html>

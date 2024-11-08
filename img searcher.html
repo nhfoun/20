@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Searcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.categories {
+    margin: 20px 0;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-item {
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image-item img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+</style>
+<body>
+    <h1>Image Searcher</h1>
+    <div class="categories">
+        <button class="category-btn" data-category="nature">ALL</button>
+        <button class="category-btn" data-category="nature">Education</button>
+        <button class="category-btn" data-category="animals">Social Services</button>
+        <button class="category-btn" data-category="technology">Poor children</button>
+    </div>
+    <div id="image-container"></div>
+
+    <script >
+
+   
+document.addEventListener('DOMContentLoaded', () => {
+    const imageContainer = document.getElementById('image-container');
+
+    // Sample images for each category
+    const images = {
+       
+        nature: [
+            'debate club pic.bmp',
+            'apk_app2.png'
+        ],
+        animals: [
+            'about.jpg',
+            '5757453.jpg'
+        ],
+        technology: [
+            'https://example.com/tech1.jpg',
+            'https://example.com/tech2.jpg'
+        ]
+    };
+
+    document.querySelectorAll('.category-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+            displayImages(category);
+        });
+    });
+
+    function displayImages(category) {
+        imageContainer.innerHTML = '';
+        images[category].forEach(url => {
+            const imgElement = document.createElement('img');
+            imgElement.src = url;
+            const imageItem = document.createElement('div');
+            imageItem.classList.add('image-item');
+            imageItem.appendChild(imgElement);
+            imageContainer.appendChild(imageItem);
+        });
+    }
+});
+
+    </script>
+</body>
+</html>
